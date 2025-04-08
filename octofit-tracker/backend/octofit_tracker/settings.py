@@ -25,8 +25,10 @@ MIDDLEWARE = [
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'djongo',  # Ensure the database engine is set to djongo
         'NAME': 'octofit_db',
+        'HOST': 'localhost',
+        'PORT': 27017,
     }
 }
 
